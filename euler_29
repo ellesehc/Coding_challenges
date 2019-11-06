@@ -1,0 +1,12 @@
+numbers = []
+result = []
+for x in range(2,101):
+    for y in range(2,101):
+        result.append(x ** y)
+
+for num in result:
+    if num not in numbers:
+        numbers.append(num)
+
+print(len(numbers))
+print(sorted(numbers))
