@@ -1,0 +1,29 @@
+
+count = 1
+submit = 0
+result = 0
+
+
+for numbers in range (1,1000000):
+    num = numbers
+    number = numbers
+    print("number to be considered!!!!!!! {}".format(number))
+    while number != 1:
+        if number % 2 == 0:
+            number = number / 2
+            count += 1
+            print("number is now {}".format(number))
+        else:
+            number = (3 * number) + 1
+            count += 1
+            print("number is now {}".format(number))
+
+
+    if count > submit:
+        submit = count
+        count = 0
+        result = num
+    else:
+        count = 0
+
+print(count, submit, result)
