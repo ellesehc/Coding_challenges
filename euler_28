@@ -1,0 +1,23 @@
+stop = 1001 * 1001
+x = [x for x in range(1, stop + 1)]
+
+counter = 0
+result = 1
+odd = 2
+
+meow = []
+
+for number in x:
+	if number == result:
+		meow.append(result)
+		result += odd
+		print("RESULT IS: {}".format(result))
+		print("ODD IS {}".format(odd))
+		print("COUNTER IS {}".format(counter))
+		counter += 1
+		if counter % 4 == 0:
+			odd += 2
+
+
+print(sum(meow))
+
